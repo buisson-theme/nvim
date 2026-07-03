@@ -1,4 +1,4 @@
-# buisson.nvim
+# nvim
 
 > *From the French — a thicket, a tangle of wild growth at the edge of a path.*
 
@@ -11,7 +11,7 @@ An inky botanical color scheme for Neovim. Warm paper backgrounds, botanical ink
 
 ```lua
 vim.pack.add({
-  { src = "https://github.com/buisson-theme/buisson.nvim" },
+  { src = "https://github.com/buisson-theme/nvim" },
 })
 ```
 
@@ -19,7 +19,7 @@ vim.pack.add({
 
 ```lua
 {
-  "buisson-theme/buisson.nvim",
+  "buisson-theme/nvim",
   priority = 1000,
   config = function()
     vim.cmd.colorscheme("buisson")
@@ -31,7 +31,7 @@ vim.pack.add({
 
 ```lua
 use({
-  "buisson-theme/buisson.nvim",
+  "buisson-theme/nvim",
   config = function()
     vim.cmd.colorscheme("buisson")
   end,
@@ -41,7 +41,7 @@ use({
 ### vim-plug
 
 ```vim
-Plug 'buisson-theme/buisson.nvim'
+Plug 'buisson-theme/nvim'
 ```
 
 Then load it after `plug#end()`:
@@ -66,7 +66,7 @@ vim.cmd.colorscheme("buisson")
 
 ## Variants
 
-`buisson.nvim` uses Neovim's `background` option to choose the palette:
+The `buisson` colorscheme uses Neovim's `background` option to choose the palette:
 
 ```lua
 vim.o.background = "dark"
